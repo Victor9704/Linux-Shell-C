@@ -1,0 +1,40 @@
+# depslib dependency file v1.0
+1511719134 source:/home/victor/C Projects/CShell/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<unistd.h>
+	<fcntl.h>
+	<errno.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<dirent.h>
+	<readline/readline.h>
+	<readline/history.h>
+
+1515881484 source:/home/victor/C Projects/CShellBackup 2/CShell/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<unistd.h>
+	<fcntl.h>
+	<errno.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<dirent.h>
+	<readline/readline.h>
+	<readline/history.h>
+
+1515917484 source:/home/victor/CShell 2/CShell/main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<unistd.h>
+	<fcntl.h>
+	<errno.h>
+	<sys/types.h>
+	<sys/stat.h>
+	<dirent.h>
+	<readline/readline.h>
+	<readline/history.h>
+
