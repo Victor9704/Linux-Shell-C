@@ -33,14 +33,6 @@ int _mkdir(char* argv[],int argc);
 
 int _basename(char* argv[],int argc);
 
-//! TO DO WHEN DELETING FILE OR FOLDER DO WE CARE ABOUT WHAT IT IS?
-//! EX : REGULAR EMPTY FILE, EMPTY FILE, TEXT FILE, DIR ......
-//! DO COMMAND IMPLEMENTED BY US NEED TO ALSO RUN WITH THE REMAINING OIPTIONS EX: rm -d ?
-//! DO int _execvp_pipe_redirect(char* buffer, int nr_of_pipes_redirect_found) ERROR CHECKS!
-
-//! BUGS :
-//! ls -l > longer path not working!
-
 //!Globals
 
 char* pipes_redirect[20];
@@ -246,7 +238,6 @@ int _execvp(char* argv[], int size){
     }
     else if(pid==0){
 
-        //!TO DO RM
         if(strcmp(cmd,"rm")==0){
 
             int err = _rm(argv,size);
@@ -259,7 +250,7 @@ int _execvp(char* argv[], int size){
             exit(err);
 
         }
-        //! TO DO MKDIR
+
         if(strcmp(cmd,"mkdir")==0){
 
             int err = _mkdir(argv,size);
@@ -273,7 +264,6 @@ int _execvp(char* argv[], int size){
 
         }
 
-        //! TO DO BASENAME
         else if(strcmp(cmd,"basename")==0){
 
             int err = _basename(argv,size);
